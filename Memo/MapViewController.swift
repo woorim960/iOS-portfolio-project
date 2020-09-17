@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Map_201516063
-//
-//  Created by 203a00 on 2018. 4. 30..
-//  Copyright © 2018년 Park-woorim. All rights reserved.
-//
-
 import UIKit
 import MapKit
 
@@ -30,10 +22,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         myMap.showsUserLocation = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func goLocation(latitudeValue: CLLocationDegrees, longitudeValue: CLLocationDegrees, delta span: Double) -> CLLocationCoordinate2D {
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longitudeValue)

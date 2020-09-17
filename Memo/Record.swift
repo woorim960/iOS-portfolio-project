@@ -55,7 +55,6 @@ class Record: UIViewController {
             UserDefaults.standard.set(MemoData, forKey: "MemoData")
         }
     }
-    
 // Action_End
     
 }

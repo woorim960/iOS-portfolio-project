@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40507CF920D247D500B91016 /* 인덕대 로고.png in Resources */ = {isa = PBXBuildFile; fileRef = 40507CF820D247D500B91016 /* 인덕대 로고.png */; };
+		4080367420D67F9C003866A2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080367320D67F9C003866A2 /* CalculatorViewController.swift */; };
 		4089EF0C20B6E29000229608 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4089EF0B20B6E29000229608 /* WebViewController.swift */; };
 		409A378D20B29E91006453DD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A378C20B29E91006453DD /* MapViewController.swift */; };
 		409A378F20B2A3FF006453DD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409A378E20B2A3FF006453DD /* PageViewController.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40507CF820D247D500B91016 /* 인덕대 로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "인덕대 로고.png"; sourceTree = "<group>"; };
+		4080367320D67F9C003866A2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		4089EF0B20B6E29000229608 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		409A378C20B29E91006453DD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		409A378E20B2A3FF006453DD /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		409A379020B2AB27006453DD /* image */ = {
 			isa = PBXGroup;
 			children = (
+				40507CF820D247D500B91016 /* 인덕대 로고.png */,
 				409A37B120B2DC1A006453DD /* 귀여운 아이콘.png */,
 				409A379120B2AB35006453DD /* 구형파.jpeg */,
 				409A379C20B2AB36006453DD /* 대전.jpeg */,
@@ -169,6 +174,7 @@
 				409A378C20B29E91006453DD /* MapViewController.swift */,
 				409A378E20B2A3FF006453DD /* PageViewController.swift */,
 				4089EF0B20B6E29000229608 /* WebViewController.swift */,
+				4080367320D67F9C003866A2 /* CalculatorViewController.swift */,
 				40BBB85220A6CE6D0003742D /* Main.storyboard */,
 				40BBB85520A6CE6E0003742D /* Assets.xcassets */,
 				40BBB85720A6CE6E0003742D /* LaunchScreen.storyboard */,
@@ -266,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40BBB84620A6CE6D0003742D /* Build configuration list for PBXProject "Portfolio Project" */;
+			buildConfigurationList = 40BBB84620A6CE6D0003742D /* Build configuration list for PBXProject "Memo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -294,6 +300,7 @@
 				40DB8DDD20B45786009B996E /* drfont_daraehand_Basic.ttf in Resources */,
 				40DB8DDE20B45786009B996E /* HoonWhitecatR.ttf in Resources */,
 				40DB8DDF20B45786009B996E /* SangSangFlowerRoad.otf in Resources */,
+				40507CF920D247D500B91016 /* 인덕대 로고.png in Resources */,
 				409A37AC20B2AB37006453DD /* 학교 홈커밍데이.jpeg in Resources */,
 				409A37AA20B2AB37006453DD /* 대전.jpeg in Resources */,
 				40BBB85920A6CE6E0003742D /* LaunchScreen.storyboard in Resources */,
@@ -343,6 +350,7 @@
 				409A37AE20B2BEE8006453DD /* ViewController.swift in Sources */,
 				409A378D20B29E91006453DD /* MapViewController.swift in Sources */,
 				40BBB87D20A6D10F0003742D /* Record.swift in Sources */,
+				4080367420D67F9C003866A2 /* CalculatorViewController.swift in Sources */,
 				4089EF0C20B6E29000229608 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40BBB84620A6CE6D0003742D /* Build configuration list for PBXProject "Portfolio Project" */ = {
+		40BBB84620A6CE6D0003742D /* Build configuration list for PBXProject "Memo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BBB87120A6CE6E0003742D /* Debug */,

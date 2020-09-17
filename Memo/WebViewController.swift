@@ -18,9 +18,40 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         myWebView.delegate = self
         loadWebPage("http://blog.naver.com/dnfla420")
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(WebViewController.respondToSwipeGesture(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(WebViewController.respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(WebViewController.doPinch(_:)))
+        self.view.addGestureRecognizer(pinch)
+    }
+    
+    @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.left:
+                myWebView.goForward()
+            case UISwipeGestureRecognizerDirection.right:
+                myWebView.goBack()
+
+            default: break
+            }
+        }
+    }
+    
+    @objc func doPinch(_ pinch: UIPinchGestureRecognizer) {
+        myWebView.transform = myWebView.transform.scaledBy(x: pinch.scale, y: pinch.scale)
+        pinch.scale = 1
     }
 
     func webViewDidStartLoad(_ webView: UIWebView) {
@@ -34,15 +65,11 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     func checkUrl(_ url: String) -> String {
         var strUrl = url
         let flag = strUrl.hasPrefix("http://www.")
-        let flag2 = strUrl.hasPrefix("www.")
 
         if !flag {
             strUrl = "http://www." + strUrl
         }
         
-        if !flag2 {
-            strUrl = "http://www." + strUrl
-        }
         return strUrl
     }
     // Function_End
@@ -87,6 +114,5 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         myWebView.goForward()
     }
     // Action_End
-    
 }
 
